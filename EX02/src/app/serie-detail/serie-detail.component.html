@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="border text-center p-2 rounded greyWhite row">
+        <img src="https://image.tmdb.org/t/p/original{{serie.backdrop_path}}" class="imgPelicula rounded col-12"/>
+        <p class="mt-3 col-12"><strong>Original Title: </strong>{{serie.original_name}}</p>
+        <p class="col-12"><strong>Original Lenguage: </strong>{{serie.original_language}}</p>
+        <p class="col-12"><strong>First Air Date: </strong>{{serie.first_air_date}}</p>
+        <p class="col-12"><strong>Numero de votos: </strong>{{serie.vote_count}}</p>
+        <p class="col-12"><strong>Generes </strong></p>
+        @for (genero of serie.genres; track $index) {
+            <div class="col mb-2">
+                {{genero.name}}
+            </div>
+        }
+        <p class="col-12 mt-3"><strong>Description</strong></p>
+        <p class="col-12">{{serie.overview}}</p>
+    </div>
+</div>

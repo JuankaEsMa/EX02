@@ -1,0 +1,7 @@
+.imgPelicula{
+    max-width: 600px;
+    margin: auto auto;
+}
+.greyWhite{
+    background-color: var(--greyWithe);
+}

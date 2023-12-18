@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --greyWithe: rgb(250,250,250)
+}
+.centerItem{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
